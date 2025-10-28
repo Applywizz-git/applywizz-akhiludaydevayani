@@ -144,15 +144,18 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-accent to-highlight rounded-full blur-3xl opacity-30 animate-glow-pulse" />
               
               {/* Profile Image Placeholder */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                className="relative z-10 aspect-square rounded-full overflow-hidden border-4 border-accent/30 shadow-2xl glass"
-              >
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 via-accent/20 to-highlight/20 flex items-center justify-center">
-                  <span className="text-6xl font-bold text-gradient">AUD</span>
-                </div>
-              </motion.div>
+<motion.div
+  whileHover={{ scale: 1.05 }}
+  transition={{ type: "spring", stiffness: 300 }}
+  className="relative z-10 aspect-square rounded-full overflow-hidden border-4 border-accent/30 shadow-2xl glass"
+>
+  <img
+    src="/profile.jpg"  // Replace with the correct image path
+    alt="Profile"
+    className="w-full h-full object-cover"
+  />
+</motion.div>
+
 
               {/* Floating Icons */}
               <motion.div
